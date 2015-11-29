@@ -1,0 +1,20 @@
+To sort an array in ascending, use:
+
+#include <algorithm>
+
+int main()
+{
+   //...
+   std::sort(array, array+n); //where n is the number of elements you want to sort
+}
+
+To sort it in descending, use
+
+#include <algorithm>
+#include <functional>  
+
+int main()
+{
+   //...
+   std::sort(array, array+n, std::greater<int>());
+}
